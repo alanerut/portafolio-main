@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>AE Desarrollador Web</title>
+</head>
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/EA/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://github.com/alanerut?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/alan.erut94"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/alan_erut/?hl=es"><i
+                                class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Erut Alan Omar</span>, Desarrollador Frontend</h2>
+                <p class="descripcion">Desarrollador Web\ HTML\ Css\ Sass\ Javascript\ React! </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Erut Alan Omar</span> </h2>
+            <h3>Desarrollador Frontend</h3>
+            <p>Empecé mi trayectoria Profesional como Desarrollador Frontend en el 2022,Actualmente estudio y busco
+                Crecer Profesionalmente
+                Soy una persona responsable, perseverante y dedicada a sus actividades,soy apasionado por la
+                programación,Me gusta aprender e investigar sobre las nuevas tecnologías .con capacidad para trabajar en
+                equipo en logro de los objetivos de la empresa.
+            <p> Actualmente formo en una empresa Fobutec(Agencia de Desarrollo Web, App`s y Marketing Digital), Empece
+                en el puesto como Desarrollador Frontend realizaba tareas (mantenimiento), a los 4 meses me asignaron el
+                rol a Data Analytics y hoy en dia estoy con un rol de Data Engineer(Diseño,desarrollo y mantengo el
+                proceso de transformacion y carga de datos)</p>
+            <p>
+                Recibido en la UNLZ:
+                (Tango gestión - Auxiliar bancario ).
+
+                Recibido en CoderHouse:
+                (Desarrollador Frontend)
+
+                *Desarrollo Web:
+                (HTML5,Css, bootstrap,Sass,Git GitHub).
+                *JavaScript .
+                *React.
+
+                Recibido en Udemy (Data Engineer - Data Analytics)
+                *Cloud
+                *BigQuery
+                *SQL
+                *SQL Server
+                *Power BI
+                *ETL </p>
+
+            <a href="./document/cv2024nuevoene.pdf" class="btn" download="CV.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Desarrollador web, utilizando HTML, CSS, SASS, BOSTRAP!</p>
+
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Javascript!</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Diseños web, utilizando HTML, CSS, Javascript! </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>React</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Node JS</li>
+                    <li>Javascript</li>
+                </ul>
+                <p>React, una librería para crear interfaces de usuarios con código abierto</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Bases de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>React</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <p><a href="https://alanerut.github.io/forrajeriaab/" class="info">PETSHOP</a></p>
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/calcu.jpg" alt="">
+                <div class="info">
+                    <p><a href="https://alanerut.github.io/calculadora-Artificial/" class="info">CALCULADORA!</a></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/reg.jpg" alt="">
+                <div class="info">
+                    <p><a href="https://alanerut.github.io/registro-escolar/" class="info">REGISTRO ESCOLAR!</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <p><a href="https://smash-burger2023.netlify.app/" class="info">SMASH-BURGER</a></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <p><a href="https://alanerut.github.io/pomodoro/">POMODORO</a></p>
+                </div>
+            </div>
+      
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">contacto</h3>
+        <br>
+        <section class="titulo-2">
+            <h4>Podes contactarme</h4>
+            <br>
+            <a href="mailto:alanerut94@gmail.com"><img src="./img/icons8-nuevo-post-48.png" alt="" class="img-1"> gmail:
+                alanerut94@gmail.com</a>
+            <br>
+            <a href="https://wa.link/co5y87"><img src="./img/icons8-whatsapp-48.png" alt="" class="img-1"> whatsapp
+                1139328158</a>
+        </section>
+
+
+
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://github.com/alanerut?tab=repositories"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/alan.erut94"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/alanerut/"><i class="fa-brands fa-Linkedin"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
